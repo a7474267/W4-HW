@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="header">
+    <!-- Menu -->
+    <nav class="menu d-flex align-items-center justify-content-between fs-20" id="menu">
+    <!-- 漢堡鈕 -->
+    <img class="icon-menu cursor-pointer" id="iconMenu" onclick="iconMenuClick()" src="./assets/images/ic_menu_24px.svg" alt="icon-menu">
+    <!-- 在href內插入一個無目標的死連結 -->
+    <!-- 相當於在click event裡面插入一個 e.preventDefault() -->
+    <!-- 參考文章：https://reurl.cc/qdnOEN -->
+    <a href="javascript:void(0);">
+        <img class="img" src="./assets/images/logo.png" alt="logo">
+    </a>
+    <ul class="list-style-none d-flex align-items-center">
+      <li>
+        <a href="#" class="hrefText">系列鏡框</a>
+      </li>
+      <li>
+        <a href="#" class="hrefText">門市據點</a>
+      </li>
+      <li>
+        <a href="#" class="hrefText">部落格</a>
+      </li>
+      <li>
+        <a href="faq.html" class="hrefText">常見問題</a>
+      </li>
+    </ul>
+  </nav>
+  </header>
+
+  
+<section class="faq-banner">
+    <div class="contentBox d-flex">
+        <div class="faq-banner-content d-flex">
+            <h1>常見問題</h1>
+            <img src="assets/images/help-circle-sharp.svg" alt="">  
+        </div>     
+    </div>
+</section>
+<section class="faq-content">
+    <div class="contentBox question-list">
+        <div class="faq-title">我想詢問配鏡問題</div>
+        <ul class="question w-100">
+            <li class="justify-content-between">
+                <h3 class="d-flex justify-content-between">Q1.請問可否自備鏡框單配鏡片？
+                    <img src="assets/images/ic_keyboard_arrow_down_24px.svg" alt="">
+                </h3>
+                <p>A1.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。 當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。 他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。</p>
+            </li>
+            <li>
+                <h3 class="d-flex justify-content-between">Q2.眼鏡都可以20分鐘取件嗎？
+                    <img src="assets/images/ic_keyboard_arrow_down_24px.svg" alt="">
+                </h3>
+                <p></p>
+            </li>
+            <li>
+                <h3 class="d-flex justify-content-between">Q3.散光鏡片需要額外加價嗎？
+                    <img src="assets/images/ic_keyboard_arrow_down_24px.svg" alt="">
+                </h3>
+                <p></p>
+            </li>
+            <li>
+                <h3 class="d-flex justify-content-between">Q4.我可以使用舊眼鏡的度數配鏡片嗎？
+                    <img src="assets/images/ic_keyboard_arrow_down_24px.svg" alt="">
+                </h3>
+                <p></p>
+            </li>
+            <li>
+                <h3 class="d-flex justify-content-between">Q5.請問可以單購買鏡框嗎？
+                    <img src="assets/images/ic_keyboard_arrow_down_24px.svg" alt="">
+                </h3>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap">
+      <div class="infos">
+        <ul class="menu__ul list-style-none pl-0 m-0 d-flex align-items-center">
+          <li class="li">
+            <a href="#" class="hrefText">首頁</a>
+          </li>
+          <li class="li">
+            <a href="#" class="hrefText">系列鏡框</a>
+          </li>
+          <li class="li">
+            <a href="#" class="hrefText">門市據點</a>
+          </li>
+          <li class="li">
+            <a href="#" class="hrefText">部落格</a>
+          </li>
+          <li class="li">
+            <a href="#" class="hrefText">常見問題</a>
+          </li>
+        </ul>
+      </div>
+      <div class="icons">
+        <ul class="ul list-style-none pl-0 m-0 d-flex align-items-center">
+          <li class="li">
+            <img class="d-block icon" src="./assets/images/icon-fb.svg" alt="icon-fb">
+            <!-- <i class="fa-icon icon-fb icon"></i> -->
+          </li>
+          <li class="li">
+            <img class="d-block icon" src="./assets/images/icon-ig.svg" alt="icon-ig">
+            <!-- <i class="fa-icon icon-ig icon"></i> -->
+          </li>
+          <li class="li">
+            <img class="d-block icon" src="./assets/images/icon-line.svg" alt="icon-line">
+            <!-- <i class="fa-icon icon-line icon"></i> -->
+          </li>
+        </ul>
+      </div>
+      <div class="infosTwo">
+        <ul class="imgTextUl list-style-none pl-0 m-0">
+          <li class="li">
+            <!-- <i class="fa-icon icon-phone icon"></i> -->
+            <img class="d-block icon" src="./assets/images/icon-phone.svg" alt="icon-phone">
+            <span><a href="tel:+0800-000-000" class="text">0800-000-000</a></span>
+            <!-- <span class="text">0800-000-000</span> -->
+          </li>
+          <li class="li">
+            <!-- <i class="fa-icon icon-mail icon"></i> -->
+            <img class="d-block icon" src="./assets/images/icon-mail.svg" alt="icon-mail">
+            <span><a href="mailto:glasses@business.com" class="text">glasses@business.com</a></span>
+            <!-- <span class="text">glasses@business.com</span> -->
+          </li>
+        </ul>
+      </div>
+      <hr class="hr w-100">
+      <div class="copyright d-flex align-items-center justify-content-between w-100">
+        <div class="imgText d-flex align-items-center">
+          <img class="d-block img" src="./assets/images/logo.png" alt="logo">
+          <span class="text">Copyright © 2020 Glasses.All rights reserved.</span>
+        </div>
+        <ul class="ul list-style-none pl-0 m-0 d-flex align-items-center">
+          <li class="li">
+            <a href="#" class="hrefText">隱私權政策</a>
+          </li>
+          <li class="li">
+            <a href="#" class="hrefText">服務條款</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+  <script src="./assets/js/all.js"></script>
+</body>
+</html>
